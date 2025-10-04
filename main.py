@@ -54,4 +54,6 @@ def run():
             print("Invalid option")
 
 if __name__ == "__main__":
+    libro = Book('Los hijos de Ivan', 'Guajo', '2043', 'isbn0001')
+    libro.borrow()
     run()

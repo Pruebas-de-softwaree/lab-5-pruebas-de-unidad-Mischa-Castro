@@ -9,6 +9,8 @@ class Book:
     def borrow(self):
         if self.borrowed:
             raise ValueError("The book is already borrowed")
+        else: 
+            print("The borrow is not borrowed")
         self.borrowed = True
 
     def return_book(self):
@@ -16,4 +18,7 @@ class Book:
             raise ValueError("The book is not currently borrowed")
         self.borrowed = False
 
-
+if __name__ == "__main__":
+    libro = Book('Los hijos de Ivan', 'Guajo', '2043', 'isbn0001' )
+    libro.borrow()
+   
